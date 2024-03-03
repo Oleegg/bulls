@@ -19,8 +19,8 @@ export const initialState: State = {
   attempt: [],
   inputError: false,
   isShow: false,
-  no: "",
-  yes: "",
+  no: [],
+  yes: [],
   textarea: "",
 };
 
@@ -40,10 +40,10 @@ export const reducer = (state: State, { type, payload }: Action) => {
       return { ...state, inputError: payload };
     case CHANGE_SHOW: //payload: boolean
       return { ...state, isShow: payload };
-    case CHANGE_NO: //payload: boolean
-      return { ...state, no: payload };
-    case CHANGE_YES: //payload: boolean
-      return { ...state, yes: payload };
+    case CHANGE_NO: //payload: string
+      return { ...state, no: [...state.no, payload] };
+    case CHANGE_YES: //payload: string
+      return { ...state, yes: [...state.yes, payload] };
     case RESET_GAME: //payload: boolean
       return { ...initialState };
 

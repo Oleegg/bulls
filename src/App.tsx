@@ -1,5 +1,5 @@
-import { useReducer } from "react";
-import "./App.css";
+import { useEffect, useReducer } from "react";
+import "./App.scss";
 import { Input } from "./components/Input/Input";
 import { Content } from "./components/Content/Content";
 import {
@@ -21,6 +21,19 @@ import { Popup } from "./components/Popup/Popup";
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { compNumber, yourNumber, value, inputError, isShow } = state;
+
+  const onKeydown = ({ key }: KeyboardEvent) => {
+    switch (key) {
+      case "Enter":
+        addLine();
+        break;
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("keydown", onKeydown);
+    return () => document.removeEventListener("keydown", onKeydown);
+  });
 
   const addLine = () => {
     if (!inputError && value) {

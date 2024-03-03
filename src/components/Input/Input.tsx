@@ -1,5 +1,5 @@
 import { ChangeEvent, useContext } from "react";
-import "./Input.css";
+import "./Input.scss";
 import { Context, ADD_VALUE, CHANGE_ERROR, validation } from "../../reducer";
 
 type Props = {
@@ -8,7 +8,7 @@ type Props = {
 
 export const Input = ({ addLine }: Props) => {
   const { state, dispatch } = useContext(Context);
-  const { yourNumber, value, inputError } = state;
+  const { yourNumber, value } = state;
 
   const inputHandler = (e: ChangeEvent<HTMLInputElement>) => {
     if (validation(e.target.value, value) && e.target.value.length < 5) {
@@ -40,12 +40,6 @@ export const Input = ({ addLine }: Props) => {
           </button>
         </div>
       </label>
-
-      <pre className="error">
-        {inputError &&
-          `Должно быть 4 не
-повторяющихся цифры`}
-      </pre>
     </div>
   );
 };

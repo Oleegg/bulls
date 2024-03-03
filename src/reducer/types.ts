@@ -7,7 +7,7 @@ export type State = {
   attempt: string[];
   inputError: boolean;
   isShow: boolean;
-  no: string;
-  yes: string;
+  no: string[];
+  yes: string[];
   textarea: string;
 };
