@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bulls/static/css/main.5d38c878.css",
+    "main.js": "/bulls/static/js/main.16c5a1e3.js",
+    "static/js/453.e98201f9.chunk.js": "/bulls/static/js/453.e98201f9.chunk.js",
+    "index.html": "/bulls/index.html",
+    "main.5d38c878.css.map": "/bulls/static/css/main.5d38c878.css.map",
+    "main.16c5a1e3.js.map": "/bulls/static/js/main.16c5a1e3.js.map",
+    "453.e98201f9.chunk.js.map": "/bulls/static/js/453.e98201f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d38c878.css",
+    "static/js/main.16c5a1e3.js"
+  ]
+}
