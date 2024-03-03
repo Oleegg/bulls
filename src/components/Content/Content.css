@@ -1,0 +1,10 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 300px;
+}
+
+.content__line {
+  font-size: 1.5rem;
+}

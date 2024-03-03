@@ -1,0 +1,47 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 5px;
+}
+
+.input__text {
+  font-size: 2rem;
+  max-width: 200px;
+  border: 2px solid;
+}
+.error {
+  height: 3rem;
+}
+
+.input__button {
+  font-size: 2rem;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.your-number {
+  font-size: 2rem;
+  min-height: 2.2rem;
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  font-size: 2rem;
+  min-height: 10rem;
+  min-width: 10rem;
+}

@@ -1,0 +1,10 @@
+export const ADD_COMP_NUMBER = "ADD_COMP_NUMBER";
+export const ADD_YOUR_NUMBER = "ADD_YOUR_NUMBER";
+export const ADD_VALUE = "ADD_VALUE";
+export const ADD_LINE = "ADD_LINE";
+export const CHANGE_TEXT = "CHANGE_TEXT";
+export const CHANGE_ERROR = "CHANGE_ERROR";
+export const CHANGE_SHOW = "CHANGE_SHOW";
+export const RESET_GAME = "RESET_GAME";
+export const CHANGE_NO = "CHANGE_NO";
+export const CHANGE_YES = "CHANGE_YES";
